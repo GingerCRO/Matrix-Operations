@@ -283,6 +283,28 @@ namespace Matrix_Operations
                 
                 for (int i=0; i<i1; i++)
                 {
+                    for (int j=0; j<j1; j++)
+                    {
+                        if (matrix1[i,j].Text == "")
+                        {
+                            matrix1[i, j].Text = "0";
+                        }                        
+                    }
+                }
+
+                for (int i=0; i<i2; i++)
+                {
+                    for (int j=0; j<j2; j++)
+                    {
+                        if (matrix2[i, j].Text == "")
+                        {
+                            matrix2[i, j].Text = "0";
+                        }
+                    }
+                }
+
+                for (int i=0; i<i1; i++)
+                {
                     for (int j=0; j<j2; j++)
                     {
                         matrix3[i, j].Enabled = true;
