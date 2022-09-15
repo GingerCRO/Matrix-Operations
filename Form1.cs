@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Drawing;
 
 namespace Matrix_Operations
 {
@@ -20,6 +21,8 @@ namespace Matrix_Operations
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
 
             buttonPlus.Enabled = false;
             buttonMinus.Enabled = false;
